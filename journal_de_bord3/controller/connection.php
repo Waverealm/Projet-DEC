@@ -35,6 +35,7 @@
 
 	function verification( $emailusager, $motdepasse )
 	{
+	   echo "allo";
 	   $connected = false;
 
 	   $bdd = dbConnect();
