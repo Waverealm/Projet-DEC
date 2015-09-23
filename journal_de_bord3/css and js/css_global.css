@@ -1,0 +1,323 @@
+/******************************************************************************/
+/* Général                                                                    */
+/******************************************************************************/
+html, body {
+   height: 100%;
+   width: 1500px;
+   margin: 0 auto;
+   background-color: #E3DEC8;
+}
+
+.page {
+   margin: auto;
+   width: 60%;
+   height: 80%;
+}
+
+.div_page_content {
+  min-height: 600px;
+  background-color: #F2F0E6;
+  margin-bottom: 0.5%;
+  padding-bottom: 2%;
+}
+
+/* Header des pages  */
+.header_global {
+   margin: auto;
+   width: 100%;
+}
+
+.header_user{
+   background-color: #6B6967;
+   height: 50px;
+}
+
+/* Pour la section utilisateur (boutons, connexion, etc.) dans le header */
+.section_user_header {
+   float: right;
+   position: relative;
+   height:27px;
+   line-height:27px;
+   top: 20%;
+   right: 1%;
+}
+
+.titre {
+   height: 10%;
+   text-align: center;
+   margin:auto;
+   color: #5E533F;
+}
+
+/* Pour le contenu d'une page' */
+.content {
+   width: 70%;
+   height: 100%;
+   left: 5%;
+   text-align: justify;
+   position: relative;
+   overflow: hidden;
+   font: 13px Georgia, serif;
+   color: #5E533F;
+}
+
+/* Pour les champs de texte */
+.champ_texte {
+   font: 14px Arial, serif; 
+   padding: 3px;
+   color: #666666;
+}
+
+/* Empêche le resize des textarea de la page poster */
+textarea{ resize:none;}
+
+/*.header_logo {
+   padding-bottom: 3%;
+   height: 80px;
+   margin: 3px 0 0 3px;
+}*/
+
+
+/******************************************************************************/
+/* Inscription                                                                */
+/******************************************************************************/
+/* Pour le logo sur la page d'inscription */
+#header_logo_inscription {
+   width: 100%;
+   margin: auto;
+   text-align: center;
+   margin-top: 50px;
+}
+
+/* CSS pour la page d'inscription */
+#page_inscription {
+   text-align: center;
+   width: 80%;
+   height: 100%;
+   margin-right: auto;
+   margin-left: auto;
+   margin-bottom: auto;
+   margin-top: 4%;
+}
+
+#table_inscription {
+   background-color: #F2F0E6;
+   width: 40%;
+   height: 100%;
+   margin: auto;
+   padding: 2%;
+}
+
+#titre_inscription{
+    width: 20%;
+    color: #4A402D;
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 6%
+}
+
+.champ_texte_inscription {
+   font: 14px Arial, serif; 
+   margin: 2%;
+   padding: 3px;
+   color: #666666;
+   width: 175px;
+}
+
+.labelRow{
+    font-size: 16px;
+    text-align: right;
+    width: 43%;
+}
+
+/* Pour les select à la page d'inscription */
+select {
+   font: 14px Arial, serif; 
+   margin: 2%;
+   padding: 3px;
+   color: #666666;
+   width: 185px;
+}
+
+
+/******************************************************************************/
+/* Menu à gauche                                                              */
+/******************************************************************************/
+.menu {
+   width: 20%;
+   float: left;
+}
+
+.container_titre_menu {
+   vertical-align: middle;
+   height: 100px;
+   width: 90%;
+}
+
+.titre_menu {
+   padding: 3px;
+   margin-top: 40px;
+   background-color: #C9BFA9;
+   font: 20px Georgia, serif;
+   color: #FFFFFF;
+   position: relative;
+}
+
+
+/******************************************************************************/
+/* Page developers                                                            */
+/******************************************************************************/
+#content_developers {
+   text-align: center;
+   margin:auto;
+   width: 80%;
+   margin-left: 20%;
+   font: 13px Georgia, serif;
+   color: #5E533F;
+}
+
+.label_developers {
+   margin:auto;
+}
+
+
+/******************************************************************************/
+/* Consultation du journal                                                    */
+/******************************************************************************/
+
+#journal {
+  text-align: center;
+  width: 40%;
+  margin-left: 300px;
+  color: #5E533F;
+}
+
+.inline_element {
+  display: inline-block;
+}
+
+#week_dates
+{
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+#week_day {
+  font-weight: bold;
+}
+
+/* CSS des flèches pour parcourir le journal */
+.arrow_right {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8.5px 0 8.5px 11px;
+  border-color: transparent transparent transparent #3b342c;
+  background-color: transparent;
+  margin-left: 5px;
+  vertical-align: -30%;
+  cursor:pointer;
+}
+
+.arrow_right:hover {
+  border-color: transparent transparent transparent #7d7164;
+}
+
+.arrow_right:active {
+  border-color: transparent transparent transparent #b0a69b;
+ }
+
+ .arrow_left {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8.5px 11px 8.5px 0;
+  border-color:  transparent #3b342c transparent transparent;
+  background-color: transparent;
+  margin-right: 5px;
+  vertical-align: -30%;
+  cursor:pointer;
+}
+
+.arrow_left:hover {
+  border-color: transparent #7d7164 transparent transparent;
+}
+
+.arrow_left:active {
+  border-color: transparent #b0a69b transparent transparent;
+ }
+
+
+/******************************************************************************/
+/* Boutons                                                                    */
+/******************************************************************************/
+.button {
+	background-color:#BDBAA6;
+  border-radius: 3px;
+  text-indent:0px;
+	border:1px solid #D6D2C5;
+	display:inline-block;
+	color:#ffffff;
+	font-weight:bold;
+  font: 15px Arial, serif;
+	text-decoration:none;
+	text-align:center;
+  cursor: pointer;
+  margin: auto;
+  height: 25px;
+  outline: none;
+}
+
+
+.button:hover {
+	background-color:#D1CBBA;
+}
+
+.button:active {
+   background-color: #D6D2C5;
+   color: #8F8772;
+ }
+ 
+td .button {
+   margin-top: 5%;
+   font-size: 17px;
+   height: 30px;
+}
+
+
+/******************************************************************************/
+/* Liens                                                                      */
+/******************************************************************************/
+a {
+    color: #052B30;
+    text-decoration: none;
+    margin-left: 3px;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+
+/******************************************************************************/
+/* Footer                                                                     */
+/******************************************************************************/
+.page_footer {
+    clear: both;
+    width: 100%;
+    margin: 6px auto 10px auto;
+    text-align: center;
+    bottom: 0;
+    font-size: 0.8em;
+    color: #052B30;
+}
+
+.page_footer a {
+    color: #052B30;
+    text-decoration: none;
+}
+
+.page_footer a:hover {
+    text-decoration: underline;
+}
